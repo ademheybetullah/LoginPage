@@ -1,0 +1,39 @@
+﻿<header>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <a class="navbar-brand" href="#">BackendTask</a>
+        <ul class="navbar-nav ml-2">
+            @if (Convert.ToInt32(Session["UserRole"]) == 1)
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/Reports/UserReport">User Reports</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="/Reports/RegistrationReport">Registration Report</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="/Reports/LoginTimeReport">Login Report</a>
+                </li>
+            }
+
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            @if (Convert.ToBoolean(Session["isOnline"])== true)
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout/logout">Logout </a>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/register/register">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login/login">Login</a>
+                </li>
+            }
+
+
+        </ul>
+    </nav>
+</header>

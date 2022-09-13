@@ -1,0 +1,30 @@
+﻿@model PresentationLayer.Models.UserReportModel
+@{ ViewData["Title"] = "UserReports"; }
+@{
+    Layout = null;
+}
+<head>
+    <title>User Reports</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    @Html.Partial("Navbar")
+    <div class="container">
+        <div class="card-deck mt-5">
+            <div class="card bg-warning">
+                <h5 class="card-title">User Reports</h5>
+                <div class="card-body text-center">
+                    <p class="card-text">Current online user numbers: @Model.OnlineUsers</p>
+                    <p class="card-text">Users are sent a verification code but did not register after 1 day: @Model.UnconfirmedUsers</p>
+                </div>
+                <a href="/Reports/UserReport" class="btn btn-primary">Refresh</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+

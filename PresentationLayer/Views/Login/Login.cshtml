@@ -1,0 +1,41 @@
+﻿@model EntityLayer.Concrete.User
+@{
+    ViewBag.Title = "Login";
+}
+@{
+    Layout = null;
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+
+@using (Html.BeginForm())
+{
+    <div class="container">
+        <h2>Login</h2>
+        <div asp-validation-summary="All" class="text-warning"></div>
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <label>Email</label>
+            @Html.TextBoxFor(i => i.Email, new { @placeholder = "Enter email", @class = "form-control" })
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            @Html.TextBoxFor(i => i.Password, new { @type = "password", @placeholder = "Enter password", @class = "form-control" })
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="d-flex justify-content-center links">
+            Don't you have an account <a href="@Url.Action("Register", "Register")" class="ml-2">Sign Up</a>
+        </div>
+        <div class="d-flex justify-content-center links">
+            <a href="/Password/ForgotPassword">Forgot your password?</a>
+        </div>
+    </div>
+}
+@Html.Raw(TempData["ErrorCard"])
+

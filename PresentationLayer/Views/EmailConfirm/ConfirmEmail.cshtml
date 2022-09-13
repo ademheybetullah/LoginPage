@@ -1,0 +1,30 @@
+﻿@{ ViewData["Title"] = "ConfirmEmail"; }
+
+@{
+    Layout = null;
+}
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+
+@using (Html.BeginForm())
+{
+<div class="container">
+    <h2>Confirm Password</h2>
+    <div asp-validation-summary="All" class="text-warning"></div>
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label>Email</label>
+        <input id="Email" type="email" class="form-control" placeholder="Email" name="Email">
+    </div>
+    <div class="form-group">
+        <label>Confirm Code</label>
+        <input id="confirmCode" type="text" class="form-control" placeholder="Confirm Code" name="code">
+    </div>
+    <button type="submit" class="btn btn-info">Confirm</button>
+</div>}

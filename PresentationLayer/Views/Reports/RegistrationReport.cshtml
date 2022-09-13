@@ -1,0 +1,32 @@
+﻿@model PresentationLayer.Models.RegistrationReportModel
+@{ ViewData["Title"] = "RegistrationReport"; }
+@{ Layout = null; }
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    @Html.Partial("Navbar")
+    <div class="container">
+        <div class="card-deck mt-5">
+            <div class="card bg-warning">
+                <h5 class="card-title">Count of Successful Registrations</h5>
+                <div class="card-body text-center">
+                    <p class="card-text">Count of successful registrations between @Model.StartDate.Date.ToShortDateString() and @Model.EndDate.Date.ToShortDateString(): @Model.RegistrationCount</p>
+                    <form asp-controller="Reports" asp-action="RegistrationReport" method="post">
+                        <label for="StartDate">Start Date</label>
+                        <input class="form-control" type="date" id="StartDate" name="StartDate">
+                        <label for="EndDate">End Date</label>
+                        <input class="form-control" type="date" id="EndDate" name="EndDate">
+                        <button type="submit" class="btn btn-primary mt-2">Count</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
