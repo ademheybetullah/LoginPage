@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-sm bg-light">
         <a class="navbar-brand" href="#">BackendTask</a>
         <ul class="navbar-nav ml-2">
-            @if (Convert.ToInt32(Session["UserRole"]) == 1)
+            @if (Convert.ToInt32(Session["UserRole"]) == 0)
             {
                 <li class="nav-item">
                     <a class="nav-link" href="/Reports/UserReport">User Reports</a>

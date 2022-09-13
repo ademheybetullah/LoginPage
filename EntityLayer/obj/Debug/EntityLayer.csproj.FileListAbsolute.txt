@@ -9,3 +9,14 @@ C:\Users\ademh\Desktop\PresentationLayer\EntityLayer\obj\Debug\EntityLayer.cspro
 C:\Users\ademh\Desktop\PresentationLayer\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
 C:\Users\ademh\Desktop\PresentationLayer\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\ademh\Desktop\PresentationLayer\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\ademh\Documents\GitHub\LoginPage\EntityLayer\obj\Debug\EntityLayer.pdb

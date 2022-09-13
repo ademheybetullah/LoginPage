@@ -15,7 +15,6 @@ namespace PresentationLayer.Controllers
     public class RegisterController : Controller
     {
         UserBusiness userBusiness = new UserBusiness();
-        RegistrationReportBusiness registrationBusiness = new RegistrationReportBusiness();
         private IEmailSender _emailSender = new SmtpEmailSender(
                     "smtp.office365.com",
                     587,

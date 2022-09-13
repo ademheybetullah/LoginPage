@@ -27,6 +27,7 @@ namespace PresentationLayer.Controllers
             }
             if (user.ConfirmCode == code)
             {
+                user.EmailConfirmDate = DateTime.Now;
                 user.isConfirmed = true;
                 userBusiness.UserUpdate(user);
                 return RedirectToAction("Login", "Login");

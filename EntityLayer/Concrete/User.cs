@@ -24,7 +24,6 @@ namespace EntityLayer.Concrete
         [Column(TypeName = "datetime2")]
         public DateTime EmailConfirmDate { get; set; }
 
-        public int RegistrationId { get; set; }
         public bool isOnline { get; set; }
         public bool isConfirmed { get; set; }
     }

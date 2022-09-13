@@ -12,6 +12,5 @@ namespace DataAccessLayer.Concrete
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Login> LoginReports { get; set; }
-        public DbSet<Registration> Registrations { get; set; }
     }
 }
